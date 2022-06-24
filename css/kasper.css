@@ -80,6 +80,21 @@ ul {
   background-color: white;
   border-radius: 50%;
 }
+.main-heading:hover h2::after {
+  animation-name: ball;
+  animation-duration: 2s;
+}
+@keyframes ball {
+  0% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -55px;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
 .main-heading p {
   width: 550px;
   margin: 0 auto 100px;
